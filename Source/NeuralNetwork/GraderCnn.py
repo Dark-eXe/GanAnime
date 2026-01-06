@@ -1,19 +1,5 @@
 from torch.nn import Module
-from torch.nn import BatchNorm1d
-from torch.nn import BatchNorm2d
-from torch.nn import Module
-from torch.nn import Conv2d
-from torch.nn import Linear
-from torch.nn import MaxPool2d
-from torch.nn import ReLU
-from torch.nn import Softmax
-from torch.nn import Dropout
 import torch.nn as nn
-
-from torch.optim import Adam
-from torch import flatten
-from torch.utils.data import DataLoader
-from torch.utils.data import TensorDataset
 
 class GraderCnn(Module):
     def __init__(self, imageChannels):
@@ -50,4 +36,3 @@ class GraderCnn(Module):
 
     def forward(self, x):
         return self.model(x)
-    
