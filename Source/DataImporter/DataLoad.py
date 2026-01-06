@@ -2,9 +2,7 @@ from .ImageDataset import ImageDataset
 
 import glob
 import cv2
-import numpy as np
-import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 
 class DataLoad(ImageDataset):
     def __init__(self): 
